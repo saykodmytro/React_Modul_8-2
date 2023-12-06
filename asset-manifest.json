@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React_Modul_8-2/static/css/main.2838a7a5.css",
-    "main.js": "/React_Modul_8-2/static/js/main.50e41084.js",
+    "main.js": "/React_Modul_8-2/static/js/main.dd321fdb.js",
     "static/js/763.e8959098.chunk.js": "/React_Modul_8-2/static/js/763.e8959098.chunk.js",
     "static/js/636.f5eb8145.chunk.js": "/React_Modul_8-2/static/js/636.f5eb8145.chunk.js",
     "static/js/953.feeec949.chunk.js": "/React_Modul_8-2/static/js/953.feeec949.chunk.js",
@@ -9,12 +9,12 @@
     "static/js/26.45a0b422.chunk.js": "/React_Modul_8-2/static/js/26.45a0b422.chunk.js",
     "static/js/637.10a1e364.chunk.js": "/React_Modul_8-2/static/js/637.10a1e364.chunk.js",
     "static/js/432.c18ec9ab.chunk.js": "/React_Modul_8-2/static/js/432.c18ec9ab.chunk.js",
-    "static/js/246.ba741144.chunk.js": "/React_Modul_8-2/static/js/246.ba741144.chunk.js",
+    "static/js/63.5af6c4d3.chunk.js": "/React_Modul_8-2/static/js/63.5af6c4d3.chunk.js",
     "static/js/422.752f8790.chunk.js": "/React_Modul_8-2/static/js/422.752f8790.chunk.js",
     "static/js/608.21f22189.chunk.js": "/React_Modul_8-2/static/js/608.21f22189.chunk.js",
     "index.html": "/React_Modul_8-2/index.html",
     "main.2838a7a5.css.map": "/React_Modul_8-2/static/css/main.2838a7a5.css.map",
-    "main.50e41084.js.map": "/React_Modul_8-2/static/js/main.50e41084.js.map",
+    "main.dd321fdb.js.map": "/React_Modul_8-2/static/js/main.dd321fdb.js.map",
     "763.e8959098.chunk.js.map": "/React_Modul_8-2/static/js/763.e8959098.chunk.js.map",
     "636.f5eb8145.chunk.js.map": "/React_Modul_8-2/static/js/636.f5eb8145.chunk.js.map",
     "953.feeec949.chunk.js.map": "/React_Modul_8-2/static/js/953.feeec949.chunk.js.map",
@@ -22,12 +22,12 @@
     "26.45a0b422.chunk.js.map": "/React_Modul_8-2/static/js/26.45a0b422.chunk.js.map",
     "637.10a1e364.chunk.js.map": "/React_Modul_8-2/static/js/637.10a1e364.chunk.js.map",
     "432.c18ec9ab.chunk.js.map": "/React_Modul_8-2/static/js/432.c18ec9ab.chunk.js.map",
-    "246.ba741144.chunk.js.map": "/React_Modul_8-2/static/js/246.ba741144.chunk.js.map",
+    "63.5af6c4d3.chunk.js.map": "/React_Modul_8-2/static/js/63.5af6c4d3.chunk.js.map",
     "422.752f8790.chunk.js.map": "/React_Modul_8-2/static/js/422.752f8790.chunk.js.map",
     "608.21f22189.chunk.js.map": "/React_Modul_8-2/static/js/608.21f22189.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2838a7a5.css",
-    "static/js/main.50e41084.js"
+    "static/js/main.dd321fdb.js"
   ]
 }

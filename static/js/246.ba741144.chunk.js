@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkReact_Modul_8_2=self.webpackChunkReact_Modul_8_2||[]).push([[246],{6246:function(e,t,u){u.r(t);u(2791);var c=u(184);t.default=function(){return(0,c.jsx)("div",{children:"ContactsPage"})}}}]);
-//# sourceMappingURL=246.ba741144.chunk.js.map
