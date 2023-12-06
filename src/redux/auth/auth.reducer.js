@@ -14,7 +14,6 @@ export const loginThunk = createAsyncThunk(
   async (formData, thunkApi) => {
     try {
       const { data } = await instance.post('/users/login', formData);
-      console.log('data: ', data);
       setToken(data.token);
 
       return data;
@@ -29,8 +28,20 @@ export const registerThunk = createAsyncThunk(
   async (formData, thunkApi) => {
     try {
       const { data } = await instance.post('/users/signup', formData);
-      console.log('data: ', data);
       setToken(data.token);
+
+      return data;
+    } catch (err) {
+      return thunkApi.rejectWithValue(err.message);
+    }
+  }
+);
+
+export const logOutThunk = createAsyncThunk(
+  'auth/logOut',
+  async (_, thunkApi) => {
+    try {
+      const { data } = await instance.post('/users/logout');
 
       return data;
     } catch (err) {
@@ -47,7 +58,6 @@ export const refreshThunk = createAsyncThunk(
       const token = state.auth.token;
       setToken(token);
       const { data } = await instance.get('/users/current');
-      console.log('data: ', data);
 
       return data;
     } catch (err) {
@@ -93,6 +103,9 @@ const authSlice = createSlice({
         state.token = payload.token;
         state.userData = payload.user;
       })
+      .addCase(logOutThunk.fulfilled, () => {
+        return initialState;
+      })
       .addCase(refreshThunk.fulfilled, (state, { payload }) => {
         state.isLoading = false;
         state.authenticated = true;
@@ -103,7 +116,8 @@ const authSlice = createSlice({
         isAnyOf(
           loginThunk.pending,
           registerThunk.pending,
-          refreshThunk.pending
+          refreshThunk.pending,
+          logOutThunk.pending
         ),
         state => {
           state.isLoading = true;
@@ -114,7 +128,8 @@ const authSlice = createSlice({
         isAnyOf(
           loginThunk.rejected,
           registerThunk.rejected,
-          refreshThunk.rejected
+          refreshThunk.rejected,
+          logOutThunk.rejected
         ),
         (state, { payload }) => {
           state.isLoading = false;

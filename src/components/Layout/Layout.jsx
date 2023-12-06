@@ -1,11 +1,17 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { logOutThunk } from 'redux/auth/auth.reducer';
 import { selectAuthenticated, selectUserData } from 'redux/auth/auth.selectors';
 
 const Layout = ({ children }) => {
+  const dispatch = useDispatch();
   const authenticated = useSelector(selectAuthenticated);
   const userData = useSelector(selectUserData);
+
+  const onLogOut = () => {
+    dispatch(logOutThunk());
+  };
 
   return (
     <div>
@@ -26,7 +32,7 @@ const Layout = ({ children }) => {
             </NavLink>
             <div>
               <span>Hello {userData.name}</span>
-              <button>Log Out</button>
+              <button onClick={onLogOut}>Log Out</button>{' '}
             </div>
           </>
         ) : (
